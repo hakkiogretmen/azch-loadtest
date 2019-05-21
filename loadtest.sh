@@ -7,7 +7,7 @@ echo "**************************************************************************
 if [ -z "$3" ]
 then
   echo "Some parameters were not passed as a parameter, please refer to help document"
-  exit -1
+  #exit -1
 else
   echo "APPLICATION_URL, TEST_DURATION and CONCURRENT_USER  were passed as a parameter"
   export APPLICATION_URL=$1
