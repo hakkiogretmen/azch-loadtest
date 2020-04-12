@@ -1,6 +1,7 @@
 # Usage
 
 ```sh
+docker run --rm -it hakkiogretmen/load-test "http://www.bing.com" 100 100
 docker run --rm -it azch/loadtest <public ip of order capture service>
 ```
 
