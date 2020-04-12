@@ -7,7 +7,7 @@ docker run --rm -it azch/loadtest <public ip of order capture service>
 
 To run this using Azure Container Instances
 ```sh
-az container create -g akschallenge --n loadtest --image azch/loadtest -e SERVICE_IP=<public ip of order capture service> --restart-policy Never --no-wait
+az container create -g aroworkshop -n loadtest --image hakkiogretmen/load-test -e APPLICATION_URL=<public ip of service> -e TEST_DURATION=100 -e CONCURRENT_USER=100 --restart-policy Never --no-wait
 
 az container attach -g akschallenge --n loadtest
 
